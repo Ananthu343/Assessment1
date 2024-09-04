@@ -15,12 +15,16 @@ const MobileviewDashboard = ({ item, index }) => {
                         <p className='font-medium text-[13px]'> by {item?.instructor_name}</p>
                     </div>
                 </div>
-                <div className='flex gap-2 text-[12px] text-[#5F5F61] items-center'>
-                    {item?.status === "join" && (
-                        <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                    )}
-                    {item?.status === "join" && <span className="text-red-500">Live</span>}
-                    {(item?.status === "join") && <span> (0.54)</span>}
+                <div className='flex gap-2 text-[12px] text-[#5F5F61] h-[30px]'>
+                    {
+                        item?.status === "join" && (
+                            <div className='flex gap-2 items-center'>
+                                <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                                <span className="text-red-500">Live</span>
+                                <span>(0.54)</span>
+                            </div>
+                        )
+                    }
                     {(item?.status !== "join") && <span> {getFormattedDate(item?.date)}</span>}
                 </div>
             </div>
