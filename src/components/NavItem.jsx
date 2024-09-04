@@ -20,7 +20,7 @@ const NavItem = ({ item }) => {
                     <path fillRule="evenodd" clipRule="evenodd" d={item.icon} strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
             </div>
-            <h3 className={`text-sm text-[#404040]' ${selected ? "font-semibold" : ""}`}>{item.name}</h3>
+            <h3 className={`text-sm text-[#404040] ${selected ? "font-semibold" : ""}`}>{item.name}</h3>
         </li>
     )
 }

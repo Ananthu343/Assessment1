@@ -7,7 +7,7 @@ const Sidebar = () => {
     const { user } = StateContext()
     
   return (
-    <div className='hidden lg:flex flex-col h-full w-[220px] pl-3 pb-3 pt-3 border border-r'>
+    <div className='hidden lg:flex flex-col h-auto min-h-full w-[220px] pl-3 pb-3 pt-3 border border-r'>
       <div className='w-full p-4 flex items-center gap-2 font-bold'>
         <div className='w-4 h-4 bg-gray-200'></div>
         <h2>Logo</h2>
