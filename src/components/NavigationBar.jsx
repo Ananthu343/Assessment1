@@ -17,7 +17,7 @@ const NavigationBar = () => {
     }, [])
 
     return (
-        <ul className='flex lg:hidden fixed bottom-0 left-0 w-full p-3 pb-4 border-t'>
+        <ul className='flex lg:hidden fixed bottom-0 left-0 w-full p-3 pb-4 border-t bg-white'>
             {
                 navigations?.map((item, index) => {
                     return <li key={index} onClick={() => setInView(item.name)} className='w-full flex flex-col gap-1  items-center hover:cursor-pointer hover:bg-gray-100'>
