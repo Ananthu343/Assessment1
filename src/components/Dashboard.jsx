@@ -32,7 +32,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     {/* mobile view */}
-                    <div className='lg:hidden w-full h-auto py-5 gap-3 flex flex-col'>
+                    <div className='lg:hidden w-full h-auto pb-[65px] py-5 gap-3 flex flex-col'>
                         {
                             filteredClass?.map((item, index) => {
                                 return <MobileviewDashboard key={index} item={item} index={index} />
