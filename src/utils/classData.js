@@ -26,7 +26,7 @@ const classData = [
     {
         name:"Basics of Frontend",
         status:"scheduled",
-        date: getDateExtended(2),
+        date: getDateExtended(48),
         instructor_name:"Courtney Henry",
         instructor_img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJrXSXb_jayac8vtbpTX_FYximkklGxSWZgA&s",
         details:null,
